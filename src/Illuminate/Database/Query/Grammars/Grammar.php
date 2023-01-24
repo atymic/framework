@@ -974,7 +974,7 @@ class Grammar extends BaseGrammar
 
         $query->aggregate = null;
 
-        return $sql.' from ('.$this->compileSelect($query).') as '.$this->wrapTable('temp_table');
+        return $sql.' from '.$this->compileSelect($query).' as '.$this->wrapTable('temp_table');
     }
 
     /**
