@@ -959,7 +959,7 @@ class Grammar extends BaseGrammar
      */
     protected function wrapUnion($sql)
     {
-        return '('.$sql.')';
+        return $sql; // TODO fix wrapping with singlestore
     }
 
     /**
